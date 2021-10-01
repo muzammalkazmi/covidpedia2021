@@ -7,11 +7,11 @@ class App extends Component{
         data:{}
     }
     async componentDidMount(){
-        const data=await fetchData()
-        this.setState({data})
-        console.log(data)
+        const newdata=await fetchData()
+        this.setState({data:newdata})
     }
     render(){
+        
         return ( 
             <div className = "App" >
                 <Cards value={this.state.data}/>
