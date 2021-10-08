@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 import {Cards,Chart,CountryPicker} from './components'
 import {fetchData} from './api'
 
+
 class App extends Component{
     state={
         data:{}
